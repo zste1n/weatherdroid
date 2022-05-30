@@ -4,17 +4,6 @@ plugins {
     id 'com.android.library' version '7.2.1' apply false
 }
 
-configurations {
-    apachehttp.extendsFrom implementation
-}
-
-dependencies {
-    implementation 'junit:junit:4.13'
-    apachehttp 'org.apache.httpcomponents:httpclient:4.5.5'
-}
-
-
-
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
